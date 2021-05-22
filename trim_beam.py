@@ -1,4 +1,4 @@
-#!/home/apercal/pipeline/bin/python3. 
+#!/home/apercal/pipeline/bin/python3
 # change the line above to reflect the location of your local python3 executable
 #
 __author__ = "Thijs van der Hulst"
