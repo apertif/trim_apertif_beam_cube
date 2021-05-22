@@ -43,7 +43,7 @@ if direction == -1:
     fitsheader['NAXIS1'] = (l_end," ")
     cube = fitsfile_data[0:naxis3,0:naxis2,0:l_end]
     
-    fits.writeto(fileout, cube, fitsheader, overwrite='False')
+    fits.writeto(fileout, cube, fitsheader, overwrite=False)
     fitsfile.close()
 
 else:
@@ -68,6 +68,6 @@ else:
         cube2 = np.flip(cube2[:, :, 0:naxis1-1],axis=2)
         cube  = np.concatenate((cube1,cube2),axis=2)
             
-        fits.writeto(fileout, cube, fitsheader, overwrite='False')
+        fits.writeto(fileout, cube, fitsheader, overwrite=False)
         fitsfile.close()
 
