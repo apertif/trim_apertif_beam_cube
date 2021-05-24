@@ -9,9 +9,11 @@ x = 6612 - 1321.
 The full beams can be reconstructed by mirroring the values of the 
 halved beam from x = 1 - 660 and pad these at x = 662 - 1321.
 
-The script is run as "./trim_beam <input_beam> <output_beam> <nr>" 
+The script is run as "<PATH>/trim_beam <input_beam> <output_beam> <nr>" 
 where nr = -1 for trimming and nr = +1 for rebuilding the beam.
 The file format used is FITS.
+
+Alternatively one can run the script as "python3 <PATH>/trim_beam <input_beam> <output_beam> <nr>"   
   
 Change the first line in the script to point to your local python3
 installation and make the script executable using "chmod +x trim_beam.py"
