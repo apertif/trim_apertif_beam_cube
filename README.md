@@ -10,7 +10,7 @@ halved beam from x = 1 - 660 and pad these at x = 662 - 1321.
 nchan must be larger than 1.
 
 The script is run as 
-"<b> local_path/trim_beam.py  input_beam  output_beam  nr </b>"
+"<b>local_path/trim_beam.py  input_beam  output_beam  nr</b>"
 
 where nr = -1 for trimming and nr = +1 for
 rebuilding the beam.  The file format used is FITS.
@@ -20,5 +20,5 @@ local python3 installation and the script must be made executable with
 "<b>chmod +x trim_beam.py</b>"
   
 Alternatively one can run the script as 
-" <b> python3  local_path/trim_beam.py  input_beam  output_beam  nr </b> "
+"<b>python3  local_path/trim_beam.py  input_beam  output_beam  nr</b>"
 
